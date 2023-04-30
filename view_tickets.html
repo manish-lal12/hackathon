@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Check Ticket Status</title>
+</head>
+        <body>
+            <header>
+    <!-- Navigation bar -->
+		<nav>
+			<ul>
+				<li><a href="hackathon.html">Home</a></li>
+				<li class="dropdown"><a href="#">Events</a>
+					<div class="dropdown-content">
+                        <a href="create_event.html">Create Event</a>
+						<a href="edit_event.html">Edit Event</a>
+						<a href="view_events.html">View Events</a>
+					</div>
+				</li>
+                <li class="dropdown"><a href="#">Organisers</a>
+					<div class="dropdown-content">
+						<a href="sign_in.html">Sign In</a>
+					</div>
+				</li>
+				<li class="dropdown"><a href="#">Tickets</a>
+					<div class="dropdown-content">
+						<a href="buy_tickets.html">Buy Ticket</a>
+						<a href="view_events.html">View Ticket Status</a>
+						<a href="cancel_ticket.html">Cancel Ticket</a>
+					</div>
+				</li>
+				<li><a href="contact_us.html">Contact Us</a></li>
+			</ul>
+		</nav>
+        <style>
+            /* Global styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url("pastel-blue-vignette-concrete-textured-background.jpg");
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 1em;
+    }
+    
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    nav ul li a {
+      color: #fff;
+      padding: 1em;
+      text-decoration: none;
+    }
+    
+    main {
+      margin: 2em auto;
+      max-width: 80%;
+    }
+    
+    h2 {
+      font-size: 2em;
+      margin: 1em 0;
+    }
+    
+    section {
+      padding: 1em;
+      border: 1px solid #333;
+      border-radius: 10px;
+      margin-bottom: 2em;
+    }
+    
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    li {
+      margin-right: 2em;
+    }
+    
+    button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 0.5em;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+    
+    button:hover {
+      background-color: #fff;
+      color: #333;
+      border: 1px solid #333;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      border: 1px solid #ccc;
+      padding: 0.5em;
+      border-radius: 5px;
+      width: 100%;
+      margin-bottom: 1em;
+    }
+    
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 0.5em;
+    }
+    
+    form {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    form > * {
+      flex: 1;
+      margin-right: 1em;
+    }
+    
+    form > *:last-child {
+      margin-right: 0;
+    }
+    
+    @media (max-width: 768px) {
+      form > * {
+        flex: 100%;
+        margin-right: 0;
+      }
+    }
+    
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 1em;
+      text-align: center;
+    }
+    
+    footer p {
+      margin: 0;
+    }
+    
+    @media (max-width: 480px) {
+      nav ul {
+        flex-wrap: wrap;
+      }
+    
+      nav ul li {
+        width: 100%;
+      }
+    }
+    
+        </style>
+	</header>
+   
+
+	<!-- Main section -->
+	<main>
+		<section id="ticket-status">
+			<h2>Check Your Ticket Status</h2>
+			<!-- Ticket status form -->
+			<form>
+				<label for="ticket-id">Ticket ID:</label>
+				<input type="text" id="ticket-id" name="ticket-id" required>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+				<input type="submit" value="Check">
+			</form>
+			<!-- Display ticket status here -->
+			<div id="status-message">
+				<p>Your ticket status is:</p>
+				<p class="status">Valid</p>
+			</div>
+            <style>
+                body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("pastel-blue-vignette-concrete-textured-background.jpg");
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 1em;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            padding: 1em;
+            text-decoration: none;
+        }
+        
+        main {
+            margin: 2em auto;
+            max-width: 80%;
+        }
+        
+        h2 {
+            font-size: 2em;
+            margin: 1em 0;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            margin: 2em 0;
+        }
+        
+        label {
+            font-size: 1.2em;
+            margin-bottom: 0.5em;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="submit"] {
+            padding: 0.5em;
+            font-size: 1.2em;
+            border-radius: 5px;
+            border: none;
+        }
+        
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+        
+        #status-message {
+            margin-top: 2em;
+            padding: 1em;
+            background-color: #eee;
+            border-radius: 5px;
+        }
+        
+        .status {
+            font-weight: bold;
+            font-size: 1.5em;
+            margin-top: 0.5em;
+        }
+        
+            </style>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; 2023 Ticket Checker. All rights reserved.</p>
+	</footer>
+
+</body>
+</html>
+

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cancel Ticket</title>
+	<link rel="stylesheet" type="text/css" href="cancel_ticket.css">
+</head>
+<body>
+	<header>
+		<!-- Navigation bar -->
+		<nav>
+			<ul>
+				<li><a href="hackathon.html">Home</a></li>
+				<li class="dropdown"><a href="#">Events</a>
+					<div class="dropdown-content">
+                        <a href="create_event.html">Create Event</a>
+						<a href="edit_event.html">Edit Event</a>
+						<a href="view_events.html">View Events</a>
+					</div>
+				</li>
+                <li class="dropdown"><a href="sign_in.html">Organisers</a>
+					<div class="dropdown-content">
+						<a href="sign_in.html">Sign In</a>
+					</div>
+				</li>
+				<li class="dropdown"><a href="#">Tickets</a>
+					<div class="dropdown-content">
+						<a href="buy_tickets.html">Buy Ticket</a>
+						<a href="view_tickets.html">View Ticket Status</a>
+						<a href="cancel_ticket.html">Cancel Ticket</a>
+					</div>
+				</li>
+				<li><a href="contact_us.html">Contact Us</a></li>
+			</ul>
+		</nav>
+        
+	</header>
+    <style>
+        body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+    background-image: url("pastel-blue-vignette-concrete-textured-background.jpg");
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 1em;
+}
+
+h1 {
+	margin: 0;
+}
+
+nav {
+	display: flex;
+	justify-content: flex-end;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li a {
+	color: #fff;
+	padding: 1em;
+	text-decoration: none;
+}
+
+main {
+	margin: 2em auto;
+	max-width: 80%;
+}
+
+#cancel-form {
+	background-color: #f9f9f9;
+	padding: 1em;
+	border-radius: 10px;
+}
+
+h2 {
+	font-size: 2em;
+	margin: 1em 0;
+}
+
+label {
+	display: block;
+	margin-bottom: 0.5em;
+}
+
+input[type="text"], input[type="email"] {
+	padding: 0.5em;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	width: 100%;
+}
+
+button[type="submit"] {
+	background-color: #333;
+	color: #fff;
+	padding: 0.5em 1em;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+}
+
+button[type="submit"]:hover {
+	background-color: #444;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 1em;
+	text-align: center;
+}
+
+    </style>
+	<main>
+		<section id="cancel-form">
+			<h2>Cancel Your Ticket</h2>
+			<form>
+				<label for="ticket-id">Ticket ID:</label>
+				<input type="text" id="ticket-id" name="ticket-id">
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email">
+				<button type="submit">Cancel Ticket</button>
+			</form>
+		</section>
+	</main>
+	
+	<footer>
+		<p>&copy; 2023 Event Management Company</p>
+	</footer>
+	
+</body>
+</html>

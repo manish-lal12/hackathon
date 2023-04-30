@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Contact Us</title>
+<body>
+    <header>
+		<!-- Navigation bar -->
+		<nav>
+			<ul>
+				<li><a href="hackathon.html">Home</a></li>
+				<li class="dropdown"><a href="#">Events</a>
+					<div class="dropdown-content">
+                        <a href="create_event.html">Create Event</a>
+						<a href="edit_event.html">Edit Event</a>
+						<a href="view_events.html">View Events</a>
+					</div>
+				</li>
+                <li class="dropdown"><a href="sign_in.html">Organisers</a>
+					<div class="dropdown-content">
+						<a href="sign_in.html">Sign In</a>
+					</div>
+				</li>
+				<li class="dropdown"><a href="#">Tickets</a>
+					<div class="dropdown-content">
+						<a href="buy_tickets.html">Buy Ticket</a>
+						<a href="view_tickets.html">View Ticket Status</a>
+						<a href="cancel_ticket.html">Cancel Ticket</a>
+					</div>
+				</li>
+				<li><a href="contact_us.html">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+    <style>
+        body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+    background-image: url("bg1.jpg");
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 1em;
+	text-align: center;
+}
+
+h1 {
+	margin: 0;
+}
+
+main {
+	margin: 2em auto;
+	max-width: 800px;
+}
+
+section {
+	background-color: #f9f9f9;
+	border-radius: 10px;
+	padding: 1em;
+	margin-bottom: 1em;
+}
+
+form {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-row-gap: 1em;
+}
+
+label {
+	font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+	width: 100%;
+	padding: 0.5em;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+	background-color: #333;
+	color: #fff;
+	padding: 0.5em 1em;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #555;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 2em;
+	text-align: center;
+}
+
+    </style>
+   
+</head>
+    
+	<header>
+		<h1>Contact Us</h1>
+	</header>
+
+	<main>
+		<section>
+			<h2>Get in touch with us</h2>
+			<p>Feel free to send us a message if you have any questions or suggestions.</p>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" required></textarea>
+
+				<input type="submit" value="Send">
+			</form>
+		</section>
+	</main>
+	<footer>
+		© 2023 Eventify Management Company,<br>
+		All rights reserved.
+		<br>
+		<br>
+		<br>
+		Kormanagala, Bengaluru - 562112
+		<br>
+		<br>
+		Contact: +91-8988973375, +91-8988970002
+		<br>
+		<p style="color:aqua" eventifymanagement1@gmail.com></p>
+		<br>
+		
+		
+		Terms &nbsp;&NonBreakingSpace;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		Privacy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		Security&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		Status&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		Docs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		Contact &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		Pricing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		Blog&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		About
+	</footer>
+</body>
+</html>

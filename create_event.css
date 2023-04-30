@@ -1,0 +1,81 @@
+<html>
+<head>
+  <style>
+    /* Style for the form */
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px #ccc;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Style for the form labels */
+    label {
+      display: block;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    /* Style for the form inputs */
+    input[type="text"], input[type="date"], input[type="time"], textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Style for the form button */
+    button[type="submit"] {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Style for the footer */
+    footer {
+      background-color: #eee;
+      padding: 10px;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Create Event</h1>
+    <form action="create_event.php" method="POST">
+      <label for="event_name">Event Name</label>
+      <input type="text" id="event_name" name="event_name" required>
+      <label for="event_date">Event Date</label>
+      <input type="date" id="event_date" name="event_date" required>
+      <label for="event_time">Event Time</label>
+      <input type="time" id="event_time" name="event_time" required>
+      <label for="event_description">Event Description</label>
+      <textarea id="event_description" name="event_description" required></textarea>
+      <button type="submit">Create Event</button>
+    </form>
+  </main>
+  <footer>
+    <p>&copy; 2023 Event Management Platform</p>
+  </footer>
+</body>
+</html>

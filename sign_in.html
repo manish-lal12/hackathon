@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <body>
+         <!-- Navigation bar -->
+		<nav>
+			<ul>
+				<li><a href="hackathon.html">Home</a></li>
+				<li class="dropdown"><a href="#">Events</a>
+					<div class="dropdown-content">
+                        <a href="create_event.html">Create Event</a>
+						<a href="edit_event.html">Edit Event</a>
+						<a href="view_events.html">View Events</a>
+					</div>
+				</li>
+                <li class="dropdown"><a href="sign_in.html">Organisers</a>
+					<div class="dropdown-content">
+						<a href="sign_in.html">Sign In</a>
+					</div>
+				</li>
+				<li class="dropdown"><a href="#">Tickets</a>
+					<div class="dropdown-content">
+						<a href="buy_tickets.html">Buy Ticket</a>
+						<a href="view_events.html">View Ticket Status</a>
+						<a href="cancel_ticket.html">Cancel Ticket</a>
+					</div>
+				</li>
+				<li><a href="contact_us.html">Contact Us</a></li>
+			</ul>
+		</nav>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-image: url("a2.jpg");
+            }
+            
+            nav {
+                background-color: #333;
+                color: #fff;
+                overflow: hidden;
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+            
+            nav ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                display: flex;
+            }
+            
+            nav li {
+                flex: 1;
+                text-align: center;
+                position: relative;
+            }
+            
+            nav a {
+                display: block;
+                padding: 1em;
+                color: #fff;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 1.2em;
+                transition: background-color 0.3s;
+            }
+            
+            nav a:hover {
+                background-color: #666;
+            }
+            
+            .dropdown {
+                position: static;
+            }
+            
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #333;
+                z-index: 1;
+            }
+            
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            
+            .dropdown-content a {
+                color: #fff;
+                padding: 0.5em;
+                text-decoration: none;
+                display: block;
+                font-size: 1em;
+                transition: background-color 0.3s;
+            }
+            
+            .dropdown-content a:hover {
+                background-color: #666;
+            }
+            
+            form {
+                max-width: 600px;
+                margin: 0 auto;
+                padding: 2em;
+                background-color: #f9f9f9;
+                border-radius: 5px;
+                border: 100px solid #ccc;
+                margin-top: 10em;
+            }
+            
+            h1 {
+                font-size: 2em;
+                color: #333;
+                margin-top: 7rem;
+                margin-bottom: 1em;
+            }
+            
+            label {
+                display: block;
+                margin-bottom: 0.5em;
+            }
+            
+            input[type="email"], input[type="password"] {
+                padding: 0.5em;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                margin-bottom: 1em;
+                width: 100%;
+            }
+            
+            button[type="submit"] {
+                background-color: #333;
+                color: #fff;
+                padding: 0.5em 1em;
+                border: none;
+                border-radius: 5px;
+                font-size: 1em;
+                cursor: pointer;
+            }
+        </style>
+        <title>
+            Organizer Sign-In
+            </title>
+        <form action="#" method="POST">
+            <h1>Organizer Sign-In</h1>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Sign In</button>
+        </form>
+        <style>
+            body {
+    
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+    
+            form {
+                max-width: 600px;
+                margin: 0 auto;
+                padding: 2em;
+                background-color: #f9f9f9;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+            }
+    
+            h1 {
+                font-size: 2em;
+                color: #333;
+                margin-bottom: 1em;
+            }
+    
+            label {
+                display: block;
+                margin-bottom: 0.5em;
+            }
+    
+            input[type="email"], input[type="password"] {
+                padding: 0.5em;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                margin-bottom: 1em;
+                width: 100%;
+            }
+    
+            button[type="submit"] {
+                background-color: #333;
+                color: #fff;
+                padding: 0.5em 1em;
+                border: none;
+                border-radius: 5px;
+                font-size: 1em;
+                cursor: pointer;
+            }
+        </style>
+    <header>
+   
+	</header>
+</body>
+</html>
